@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>memory</ion-title>
+    <ion-back-button text="Retour"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let card of cards" size="3">
+        <ion-item *ngIf="hideCard">
+          <ion-img src="/assets/images/cards/{{card}}" (click)="flip(card)"></ion-img>
+        </ion-item>
+        <ion-item *ngIf="hideQuestion">
+          <ion-img src="/assets/images/question-mark.png" (click)="flip(card)"></ion-img>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -9,3 +9,24 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+
+.toastWin{
+
+    --background: green;
+    --box-shadow:5px 5px 5px grey;
+    text-align: center;
+    font-weight: bold;
+    font-family:  Arial, Verdana, sans-serif;
+
+}
+
+.toastFail{
+
+--background: red;
+--box-shadow:5px 5px 5px grey;
+text-align: center;
+font-weight: bold;
+font-family: Arial, Verdana, sans-serif;
+
+}
